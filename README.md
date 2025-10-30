@@ -197,6 +197,23 @@ npm run build
 npm start
 ```
 
+## 🐛 Troubleshooting
+
+Having issues with deployment or getting errors? Check out our comprehensive troubleshooting guide:
+
+**[📖 TROUBLESHOOTING.md](TROUBLESHOOTING.md)** - Solutions for common issues including:
+- 404 NOT_FOUND errors on Vercel
+- Database connection issues
+- Environment variable problems
+- Build and deployment errors
+
+**Quick fix for 404 errors:**
+1. Set all environment variables in Vercel (DATABASE_URL, NEXTAUTH_SECRET, NEXTAUTH_URL)
+2. Redeploy your application
+3. Run database migrations
+
+See [TROUBLESHOOTING.md](TROUBLESHOOTING.md) for detailed instructions.
+
 ## 📊 Database Schema
 
 The application uses the following main models:
