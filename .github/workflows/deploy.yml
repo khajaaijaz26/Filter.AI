@@ -35,6 +35,14 @@ jobs:
       - name: Build MindMesh game
         run: npm run build
 
+      - name: List dist contents (debug)
+        run: |
+          echo "Contents of dist folder:"
+          ls -la dist/
+          echo "---"
+          echo "Index.html content:"
+          head -20 dist/index.html
+
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
