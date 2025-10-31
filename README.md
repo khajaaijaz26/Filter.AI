@@ -8,6 +8,12 @@ An AI-powered website and application builder that allows users to generate apps
 
 **MindMesh** is a high-quality HTML5 puzzle game inspired by Block Blast, featuring innovative "mesh combo" mechanics and strategic gameplay.
 
+### 🎮 Play Now!
+
+**🌐 Live Game**: [https://khajaaijaz26.github.io/Filter.AI/](https://khajaaijaz26.github.io/Filter.AI/)
+
+The game is deployed and ready to play! Click the link above to start playing immediately.
+
 ### 🎮 Game Overview
 
 MindMesh is an addictive puzzle game where players match and clear colored blocks on an 8x8 grid. The game combines classic match-3 mechanics with strategic power-ups, chain reactions, and a unique "mesh combo" system for advanced play.
@@ -27,13 +33,19 @@ MindMesh is an addictive puzzle game where players match and clear colored block
 - **[DESIGN.md](./DESIGN.md)** - Complete game design document with mechanics, scoring, and features
 - **[ARCHITECTURE.md](./ARCHITECTURE.md)** - Technical architecture and implementation details
 - **[ROADMAP.md](./ROADMAP.md)** - Version history and feature roadmap (v0.1 → v3.0)
+- **[DEPLOYMENT.md](./DEPLOYMENT.md)** - Deployment guide for GitHub Pages and other platforms
 
 ### 🚀 Quick Start
 
-#### Prerequisites
+#### Play Online
+Just visit: **[https://khajaaijaz26.github.io/Filter.AI/](https://khajaaijaz26.github.io/Filter.AI/)**
+
+#### Run Locally
+
+##### Prerequisites
 - Node.js 16+ and npm
 
-#### Installation
+##### Installation
 
 ```bash
 # Clone the repository
