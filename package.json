@@ -43,6 +43,12 @@
     "setupFiles": [
       "jest-canvas-mock"
     ],
+    "transform": {
+      "^.+\\.js$": "babel-jest"
+    },
+    "moduleNameMapper": {
+      "\\.(css|less|scss|sass)$": "<rootDir>/tests/__mocks__/styleMock.js"
+    },
     "collectCoverageFrom": [
       "src/**/*.js",
       "!src/main.js"
