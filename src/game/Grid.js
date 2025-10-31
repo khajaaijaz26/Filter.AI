@@ -103,7 +103,7 @@ export class Grid {
         if (block !== null) {
           if (y !== writeY) {
             // Move block down
-            this.setBlock(writeY, x, block);
+            this.setBlock(x, writeY, block);
             this.setBlock(x, y, null);
             blocksMoved = true;
           }

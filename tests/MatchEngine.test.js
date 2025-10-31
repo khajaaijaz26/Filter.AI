@@ -1,9 +1,9 @@
 /**
  * Tests for MatchEngine
  */
-import { MatchEngine } from '../src/game/MatchEngine';
-import { Grid } from '../src/game/Grid';
-import { Block } from '../src/game/Block';
+import { MatchEngine } from '../src/game/MatchEngine.js';
+import { Grid } from '../src/game/Grid.js';
+import { Block } from '../src/game/Block.js';
 
 describe('MatchEngine', () => {
   let engine;

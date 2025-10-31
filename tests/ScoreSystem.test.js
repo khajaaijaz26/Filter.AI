@@ -1,7 +1,7 @@
 /**
  * Tests for ScoreSystem
  */
-import { ScoreSystem } from '../src/game/ScoreSystem';
+import { ScoreSystem } from '../src/game/ScoreSystem.js';
 
 describe('ScoreSystem', () => {
   let scoreSystem;
