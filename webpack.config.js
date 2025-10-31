@@ -1,5 +1,16 @@
 const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
+const fs = require('fs');
+
+// Plugin to create .nojekyll file for GitHub Pages
+class NoJekyllPlugin {
+  apply(compiler) {
+    compiler.hooks.afterEmit.tap('NoJekyllPlugin', (compilation) => {
+      const nojekyllPath = path.join(compilation.options.output.path, '.nojekyll');
+      fs.writeFileSync(nojekyllPath, '');
+    });
+  }
+}
 
 module.exports = {
   entry: './src/main.js',
@@ -7,6 +18,7 @@ module.exports = {
     filename: 'bundle.[contenthash].js',
     path: path.resolve(__dirname, 'dist'),
     clean: true,
+    publicPath: './',
   },
   module: {
     rules: [
@@ -51,7 +63,8 @@ module.exports = {
       meta: {
         viewport: 'width=device-width, initial-scale=1.0'
       }
-    })
+    }),
+    new NoJekyllPlugin()
   ],
   devServer: {
     static: {
